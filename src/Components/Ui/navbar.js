@@ -40,8 +40,28 @@ export const Navbar = () => {
                             </NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to='/productos' className="nav-link diseño-active">
-                                    Productos
+                            <NavLink to='/talleres' className="nav-link diseño-active">
+                                    Talleres
+                            </NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink to='/noticias' className="nav-link diseño-active">
+                                    Noticias
+                            </NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink to='/anuncios' className="nav-link diseño-active">
+                                    Anuncios
+                            </NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink to='/calendario' className="nav-link diseño-active">
+                                    Calendario
+                            </NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink to='/galeria' className="nav-link diseño-active">
+                                    Galería
                             </NavLink>
                         </li>
                         <li className="nav-item">
