@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import {images} from '../../Resources/resources';
 
 export const Inicio = () => {
@@ -31,40 +30,33 @@ export const Inicio = () => {
                                 <div className="col-md-6 col-lg-4 py-3 wow fadeInLeft">
                                     <div className="card card-body border-0 text-center shadow pt-5">
                                         <div className="svg-icon mx-auto mb-4">
-                                            <i className="fas fa-file-invoice"></i>
+                                            <i className="fas fa-hands"></i>
                                         </div>
-                                        <h5 className="fg-gray">Pago Seguro</h5>
+                                        <h5 className="fg-gray">Responsabilidad</h5>
                                         <p className="fs-small">
-                                            En nuestra empresa nos encargamos de cumplir con la mayor
-                                            seguridad para que tu pago no sufra afectaciones de
-                                            terceros
-                                        </p>
+                                        Responder por los actos generados en la toma de decisiones, previniendo los efectos del propio comportamiento a partir de una decisión propia.                                        </p>
                                     </div>
                                 </div>
                                 <div className="col-md-6 col-lg-4 py-3 wow fadeInUp">
                                     <div className="card card-body border-0 text-center shadow pt-5">
                                         <div className="svg-icon mx-auto mb-4">
-                                            <i className="far fa-lightbulb"></i>
+                                            <i className="fas fa-handshake"></i>
                                         </div>
-                                        <h5 className="fg-gray">Adaptabilidad</h5>
+                                        <h5 className="fg-gray">Honestidad</h5>
                                         <p className="fs-small">
-                                            Nos encargaremos de desarrollar lo que necesites, nos
-                                            adaptamos a cualquier idea y presupuesto con el que
-                                            cuentes
-                    </p>
+                                        Establecer la congruencia a partir del sentir, pensar, decir y actuar de los servidores públicos en concordancia con los objetivos de la educación.
+                                    </p>
                                     </div>
                                 </div>
                                 <div className="col-md-6 col-lg-4 py-3 wow fadeInRight">
                                     <div className="card card-body border-0 text-center shadow pt-5">
                                         <div className="svg-icon mx-auto mb-4">
-                                            <i className="fas fa-mobile-alt"></i>
+                                            <i className="fas fa-file-signature"></i>
                                         </div>
-                                        <h5 className="fg-gray">Concepto</h5>
+                                        <h5 className="fg-gray">Compromiso</h5>
                                         <p className="fs-small">
-                                            Nuestro principal objetivo es contar con clientes
-                                            satisfechos, por eso se crea un concepto único para cada
-                                            uno según lo requerido
-                    </p>
+                                        Obligarse a sí mismo, a partir del propio código moral y ético, a cumplir con las políticas, misión, visión y objetivos de la institución.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -78,21 +70,16 @@ export const Inicio = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-7 wow fadeIn">
                             <div className="size-img">
-                                {/* <img src={ti} alt="" /> */}
+                                <img src={images.diaPadre} alt="" />
                             </div>
                         </div>
                         <div className="col-lg-5 pl-lg-5 wow fadeInUp">
                             <h2 className="mb-4 text-dark">
-                                Soluciones de Tecnologías de la Información
+                               ¡MES DEL PADRE!
                             </h2>
                             <p className="mb-4">
-                                Resolvemos situaciones relacionadas a Redes, Desarrollo móvil y
-                                web, Bases de datos, Testing, Internet de las cosas, ¡y mucho
-                                más!
+                            Tener un padre es esencial, pero tener el mejor padre es algo excepcional ¡Felicidades por su día!
                             </p>
-                            <Link to='/nosotros' className="btn btn-primary rounded-pill">
-                                Sobre nosotros
-                            </Link>
                         </div>
                     </div>
                 </div>

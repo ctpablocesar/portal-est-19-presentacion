@@ -155,7 +155,7 @@ hr {
 }
 
 .traction{
-  color:#13b8f2;
+  color:#58521a;
 }
 
 .fg-secondary {
@@ -1687,8 +1687,12 @@ hr {
 }
 
 .contenedor-misvis{
-  height: 17rem;
+  height: 32rem;
   text-align: justify;
+}
+
+.mision-nosotros{
+ margin-top: 25%;
 }
 
 .btn-outline-primary:focus, .btn-outline-primary.focus {
@@ -2016,6 +2020,15 @@ hr {
   border-radius: 50rem;
 }
 
+/*NOSOTROS*/
+.fondosecciones{
+  background-color: rgba(0, 0, 0, 0.582);
+  font-size: 3rem;
+  display: inline;
+}
+
+/*Fin Nosotros*/
+
 .btn-group.rounded-pill > .btn:not(:first-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -2336,9 +2349,18 @@ section {
   position: relative;
   padding-top: 100px;
   padding-bottom: 20px;
-  background-color: #062345;
+  background-color: #619f61;
 }
 
+
+.hoover-footer:hover{
+ background-color: #58521a;
+ border-radius: 2rem;
+}
+
+.logofooter{
+border-radius: 5rem;
+}
 .page-footer-section.bg-dark .caption {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -2511,6 +2533,7 @@ h2 .texto-fondoclaro{
   color: white;
 }
 
+
 /*HERO PRINCIPAL*/
 .fondotitulos{
   background-color: rgba(0, 0, 0, 0.479);
@@ -2519,17 +2542,17 @@ h2 .texto-fondoclaro{
 
 /*ICONOS*/
 
-.fa-file-invoice, .fa-lightbulb, .fa-mobile-alt{
+.fa-file-signature,.fa-handshake, .fa-hands{
   font-size: 4rem;
-  color: blue;
+  color: #5a9759;
 }
 
 .fa-credit-card, .fa-shipping-fast{
   margin-right: .5rem;
 }
 
-.fa-chart-line, .fa-thumbs-up{
-  color: #13b8f2;
+.fa-thumbs-up, .fa-chart-line{
+  color: #5a9759;
   font-size: 2rem;
 }
 
@@ -3154,31 +3177,52 @@ div.col-sm-9 div {
   }
 
 }
+@media screen and (max-width:1200px){
+  .contenedor-misvis{
+    height: 38rem;
+    margin-bottom: 10%;
+  }
+  .mision-nosotros{
+    margin-top: 40%;
+   }
+}
 
 @media screen and (max-width:978px){
   .contenedor-misvis{
-    height: 21rem;
+    height: 51rem;
     margin-bottom: 10%;
   }
+  .mision-nosotros{
+    margin-top: 50%;
+   }
 }
 
 @media screen and (max-width:790px){
   .contenedor-misvis{
-    height: 21rem;
+    height: 51rem;
     margin-bottom: 10%;
   }
+  .mision-nosotros{
+    margin-top: 35%;
+   }
 }
 
 @media screen and (max-width:767px){
   .contenedor-misvis{
-    height: 27rem;
+    height: 72rem;
     margin-bottom: 10%;
   }
+  .mision-nosotros{
+    margin-top: 120%;
+   }
 }
 
 @media screen and (max-width:580px){
   .contenedor-misvis{
-    height: 21rem;
+    height: 35rem;
     margin-bottom: 10%;
   }
+  .mision-nosotros{
+    margin-top: 25%;
+   }
 }

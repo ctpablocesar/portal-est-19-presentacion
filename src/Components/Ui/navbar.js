@@ -9,7 +9,7 @@ export const Navbar = () => {
                 <NavLink to='/' className="navbar-brand">
                         <img
                             src={images.logo}
-                            className="trans-logo"
+                            className="logofooter"
                             alt=""
                             height="90"
                             width="100"
