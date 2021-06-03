@@ -1,3 +1,5 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
 body {
   font-family: 'Quicksand', Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -335,6 +337,22 @@ hr {
     height: 100% !important;
   }
 }
+/*ICONOS TALLERES*/
+.iconostalleres{
+  color: #a98c5f;
+  margin-right: 1rem; 
+}
+
+.btn-flip{
+  position: relative;
+  margin-top: 3rem;
+  margin-bottom: 0px;
+}
+
+.des-Taller{
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
 
 /* Shadow */
 .shadow-sm {
@@ -361,6 +379,23 @@ hr {
   color: red;
   font-weight: bold;
 }
+
+/*DashboardRoutes*/
+.go-up{
+  color: green;
+  font-size: 2rem;
+  border: .3rem solid green;
+  background-color: rgb(176, 206, 176);
+  padding: .4rem;
+  margin: 0px;
+  border-radius: 1rem;
+}
+
+/*Galeria*/
+.galeria{
+  padding: 3rem;
+}
+
 
 /* Margin */
 .m-6 {
@@ -2192,22 +2227,14 @@ hr {
  margin-right: auto;
 }
 
-/*PRODUCTS SECTION CARDS*/
+/*TALLERES SECTION CARDS*/
 
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
-.card-button:hover,
-.card-button:focus {
-    background-color: #13b8f2;
-    border-color: #13b8f2;
-    box-shadow: none;
-    outline: none;
-}
-
 .card-button {
     color: #fff;
-    background-color: #062345;
-    border-color: #062345;
+    background-color: #58521a;
+    border-color: #58521a;
 }
 
 section {
@@ -2216,8 +2243,9 @@ section {
 
 
 #products-container .card {
-    border: none;
-    background: rgb(246, 246, 246) !important;
+    border: 10px  solid #5a9759;
+    background-color: white;
+    border-radius: 3rem;
 }
 
 .image-flip:hover .backside,
@@ -2227,7 +2255,7 @@ section {
     -o-transform: rotateY(0deg);
     -ms-transform: rotateY(0deg);
     transform: rotateY(0deg);
-    border-radius: .25rem;
+    border-radius: 3rem;
 }
 
 .image-flip:hover .frontside,
@@ -2301,13 +2329,14 @@ section {
 
 .frontside .card .card-title,
 .backside .card .card-title {
-    color: #062345 !important;
+  color: white;
+  text-shadow: -1.5px -1.5px 1.5px #333, 1.5px -1.5px 1.5px #333, -1.5px 1.5px 1.5px #333, 1.5px 1.5px 1.5px #333;
 }
 
 .frontside .card .card-body img {
-    width: 150px;
-    height: 120px;
-    border-radius: 50%;
+  width: 300px;
+  height: 200px;
+    border-radius: 20%;
 }
 
 

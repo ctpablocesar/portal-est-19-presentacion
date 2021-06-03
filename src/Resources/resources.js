@@ -4,6 +4,9 @@ import diaPadre from './img/diaPadre.jpg';
 import entrada from './img/entrada.jpeg';
 import historia from './img/historia.jpeg';
 import organigrama from './img/organigrama.jpeg';
+import carpinteria from './img/carpinteria.jpeg';
+import maquinas from './img/maquinas.jpeg';
+import electronica from './img/electronica.jpeg';
 
 export const images = {
     logo,
@@ -11,5 +14,8 @@ export const images = {
     diaPadre,
     entrada,
     historia,
-    organigrama
+    organigrama,
+    carpinteria,
+    maquinas,
+    electronica
 }

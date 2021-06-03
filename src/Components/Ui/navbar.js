@@ -30,7 +30,7 @@ export const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarToggler">
                     <ul className="navbar-nav ml-auto mt-3 mt-lg-0">
                         <li className="nav-item">
-                            <NavLink to='/' className="nav-link diseño-active">
+                            <NavLink to='/Inicio' className="nav-link diseño-active">
                                     Inicio
                             </NavLink>
                         </li>

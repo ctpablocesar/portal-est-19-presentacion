@@ -59,7 +59,7 @@ export const Nosotros = () => {
                         <h5 className="traction">ORGANIGRAMA</h5>
                         <hr />
                         <div className="row justify-content-center">
-                            <img src={images.organigrama} alt="" />
+                            <img src={images.organigrama} className="img-fluid" alt="" />
                         </div>
                     </div>
                     <div className="card-page mt-3">
