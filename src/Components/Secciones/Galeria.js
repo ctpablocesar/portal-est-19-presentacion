@@ -1,7 +1,7 @@
 import React from 'react';
 import ImageGallery from 'react-image-gallery';
-import {images} from '../../Resources/resources';
 import '../../Styles/traction.css'
+import { Header } from '../Ui/Header';
 
 export const Galeria = () => {
 
@@ -34,17 +34,7 @@ export const Galeria = () => {
 
     return (
         <div>
-            <div className="page-hero-section bg-image hero-mini" style={{ backgroundImage: `url(${images.entrada})` }}>
-                <div className="hero-caption">
-                    <div className="container fg-white h-100">
-                        <div className="row justify-content-center align-items-center text-center h-100">
-                            <div className="col-lg-6">
-                                <h3 className="fondosecciones mb-4 fw-medium">Galeria</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <Header titulo="Galería"/>
             <div className="galeria">
                 <ImageGallery items={imgs} slideOnThumbnailOver={true} showPlayButton={false} disableThumbnailScroll={true} showFullscreenButton={false} />
             </div>

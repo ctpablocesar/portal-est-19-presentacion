@@ -7,6 +7,12 @@ import organigrama from './img/organigrama.jpeg';
 import carpinteria from './img/carpinteria.jpeg';
 import maquinas from './img/maquinas.jpeg';
 import electronica from './img/electronica.jpeg';
+import disenio from './img/disenio.jpeg';
+import ofimatica from './img/ofimatica.jpeg';
+import turismo from './img/turismo.jpeg';
+import contabilidad from './img/contabilidad.jpeg';
+import informatica from './img/informatica.jpeg';
+import calendario from './img/calendario.jpg';
 
 export const images = {
     logo,
@@ -17,5 +23,11 @@ export const images = {
     organigrama,
     carpinteria,
     maquinas,
-    electronica
+    electronica,
+    disenio,
+    ofimatica,
+    turismo,
+    contabilidad,
+    informatica,
+    calendario
 }

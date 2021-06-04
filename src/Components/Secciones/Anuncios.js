@@ -1,9 +1,13 @@
 import React from 'react'
+import { Header } from '../Ui/Header'
 
 export const Anuncios = () => {
     return (
         <div>
-            <h1>Anuncios</h1>
+            <Header titulo="Anuncios" />
+            <div>
+                
+            </div>
         </div>
     )
 }
