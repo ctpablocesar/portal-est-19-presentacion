@@ -383,9 +383,18 @@ hr {
 /*Noticias*/
 .tarjeta-noticias{
   border: 5px solid #5a9759;
+  border-radius: .5rem;
+}
+.radius-noticias{
   border-radius: 2rem;
 }
 /*Termina Noticias*/
+
+/*Anuncios*/
+.cards-responsivas{
+  /*  */
+}
+/*termina anuncios*/
 
 
 /*Active tabs*/
@@ -419,7 +428,7 @@ hr {
 }
 
 .calendario-img{
-  width: 90%;
+  width: 100%;
 }
 
 /* Margin */
@@ -3340,6 +3349,15 @@ div.col-sm-9 div {
   .mision-nosotros{
     margin-top: 50%;
    }
+   .cards-responsivas{
+     display: flex;
+     flex-direction: column;
+   }
+   .div-calendario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width:790px){

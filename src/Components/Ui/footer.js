@@ -14,7 +14,7 @@ export const Footer = () => {
             <h3 className="mb-3">
               <span className="traction">Escuela Secundaria Técnica</span> No. 19
               </h3>
-              <ul className="nav justify-content-center py-3">
+            <ul className="nav justify-content-center py-3">
               <li className="nav-item">
                 <NavLink to='/' className="nav-link fg-white px-4 hoover-footer">
                   Inicio

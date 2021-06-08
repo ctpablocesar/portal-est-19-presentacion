@@ -7,7 +7,7 @@ export const Calendario = () => {
         <div>
             <Header titulo="Calendario Escolar"/>
             <div className="div-calendario">
-                <img src={images.calendario} alt="imagen del calendario" className="calendario-img" />
+                <a href={images.calendario} target="blank"> <img src={images.calendario} alt="imagen del calendario" className="img-fluid" /></a>
             </div>
         </div>
     )

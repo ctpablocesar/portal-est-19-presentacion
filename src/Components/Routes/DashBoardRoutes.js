@@ -1,7 +1,7 @@
 import React from 'react';
 import { Redirect, Route, Switch } from 'react-router';
-import { Footer } from '../Ui/footer';
-import { Navbar } from '../Ui/navbar';
+import { Footer } from '../Ui/Footer';
+import { Navbar } from '../Ui/Navbar';
 import { Inicio } from '../Secciones/Inicio';
 import { Nosotros } from '../Secciones/Nosotros';
 import { Talleres } from '../Secciones/Talleres';
