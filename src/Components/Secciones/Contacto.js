@@ -1,13 +1,11 @@
 import React from 'react'
 import { Header } from '../Ui/Header';
 
-
 export const Contacto = () => {
   return (
     <div>
       <div>
         <Header titulo="Contacto" />
-
         <div className="page-section">
           <div className="container">
             <div className="row justify-content-center">
@@ -32,7 +30,6 @@ export const Contacto = () => {
                   </div>
                 </div>
               </div>
-
               <div className="bg-white contact4 overflow-hidden position-relative">
                 <div className="row no-gutters">
                   <div className="container p-0">
@@ -76,16 +73,13 @@ export const Contacto = () => {
                   </div>
                   <div className="col-lg-6 right-image p-r-0">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.5909100780646!2d-104.67661758448833!3d24.010218984461993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x869b68dd1de21f35%3A0x4db9768746b3fa8c!2sEscuela%20Secundaria%20T%C3%A9cnica%20N%C2%BA%2019%20Ing.%20Manuel%20Francisco%20Peyro%20Carre%C3%B1o!5e0!3m2!1ses!2smx!4v1622819264897!5m2!1ses!2smx"
-                      width="100%" height="538"style={{ border: 0 }} data-aos="fade-left" data-aos-duration="3000" title="ubicacion de la escuela"></iframe>
+                      width="100%" height="538" style={{ border: 0 }} data-aos="fade-left" data-aos-duration="3000" title="ubicacion de la escuela"></iframe>
                   </div>
                 </div>
               </div>
-
-
             </div>
           </div>
         </div>
-
       </div>
     </div>
   )

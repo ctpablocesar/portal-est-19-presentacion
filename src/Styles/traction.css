@@ -3352,6 +3352,7 @@ div.col-sm-9 div {
    .cards-responsivas{
      display: flex;
      flex-direction: column;
+     align-items: center;
    }
    .div-calendario{
     display: flex;

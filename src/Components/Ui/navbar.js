@@ -1,20 +1,21 @@
 import '../../Styles/traction.css';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { images } from '../../Resources/resources';
 
 export const Navbar = () => {
+
     return (
         <nav className="navbar navbar-expand-lg navbar-dark navbar-floating">
             <div className="container">
-                <NavLink to='/' className="navbar-brand">
-                        <img
-                            src={images.logo}
-                            className="logofooter"
-                            alt=""
-                            height="90"
-                            width="100"
-                        />
-                </NavLink>
+                <Link to='/' className="navbar-brand">
+                    <img
+                        src={images.logo}
+                        className="logofooter"
+                        alt="Logo"
+                        height="90"
+                        width="100"
+                    />
+                </Link>
                 <button
                     className="navbar-toggler"
                     type="button"
@@ -31,42 +32,42 @@ export const Navbar = () => {
                     <ul className="navbar-nav ml-auto mt-3 mt-lg-0">
                         <li className="nav-item">
                             <NavLink to='/Inicio' className="nav-link diseño-active">
-                                    Inicio
+                                Inicio
                             </NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink to='/nosotros' className="nav-link diseño-active">
-                                    Nosotros
+                                Nosotros
                             </NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink to='/talleres' className="nav-link diseño-active">
-                                    Talleres
+                                Talleres
                             </NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink to='/noticias' className="nav-link diseño-active">
-                                    Noticias
+                                Noticias
                             </NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink to='/anuncios' className="nav-link diseño-active">
-                                    Anuncios
+                                Anuncios
                             </NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink to='/calendario' className="nav-link diseño-active">
-                                    Calendario
+                                Calendario
                             </NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink to='/galeria' className="nav-link diseño-active">
-                                    Galería
+                                Galería
                             </NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink to='/contacto' className="nav-link diseño-active">
-                                    Contacto
+                                Contacto
                             </NavLink>
                         </li>
                     </ul>

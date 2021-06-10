@@ -1,5 +1,6 @@
 import React from 'react';
 import ImageGallery from 'react-image-gallery';
+import { images } from '../../Resources/resources';
 import '../../Styles/traction.css'
 import { Header } from '../Ui/Header';
 
@@ -7,28 +8,24 @@ export const Galeria = () => {
 
     const imgs = [
         {
-            original: 'https://picsum.photos/id/1018/1000/600/',
-            thumbnail: 'https://picsum.photos/id/1018/250/150/',
+            original: images.maquinas,
+            thumbnail: images.maquinas,
         },
         {
-            original: 'https://picsum.photos/id/1015/1000/600/',
-            thumbnail: 'https://picsum.photos/id/1015/250/150/',
+            original: images.ofimatica,
+            thumbnail: images.ofimatica,
         },
         {
-            original: 'https://picsum.photos/id/1015/1000/600/',
-            thumbnail: 'https://picsum.photos/id/1015/250/150/',
+            original: images.patio,
+            thumbnail: images.patio,
         },
         {
-            original: 'https://picsum.photos/id/1015/1000/600/',
-            thumbnail: 'https://picsum.photos/id/1015/250/150/',
+            original: images.turismo,
+            thumbnail: images.turismo,
         },
         {
-            original: 'https://picsum.photos/id/1015/1000/600/',
-            thumbnail: 'https://picsum.photos/id/1015/250/150/',
-        },
-        {
-            original: 'https://images.pexels.com/photos/357271/pexels-photo-357271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-            thumbnail: 'https://images.pexels.com/photos/357271/pexels-photo-357271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=150&w=150',
+            original: 'https://images.pexels.com/photos/2982449/pexels-photo-2982449.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+            thumbnail: 'https://images.pexels.com/photos/2982449/pexels-photo-2982449.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
         },
     ];
 
