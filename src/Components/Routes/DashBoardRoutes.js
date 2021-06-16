@@ -16,16 +16,16 @@ export const DashBoardRoutes = () => {
     return (
         <>
             <Navbar />
-            <div className="containerEverthing">
+            <div>
                 <Switch>
-                    <Route path="/Inicio" exact component={Inicio} />
-                    <Route path="/Nosotros" exact component={Nosotros} />
-                    <Route path="/Talleres" exact component={Talleres} />
-                    <Route path="/Noticias" exact component={Noticias} />
-                    <Route path="/Anuncios" exact component={Anuncios} />
-                    <Route path="/Calendario" exact component={Calendario} />
-                    <Route path="/Galeria" exact component={Galeria} />
-                    <Route path="/Contacto" exact component={Contacto} />
+                    <Route path="/Inicio" component={Inicio} />
+                    <Route path="/Nosotros" component={Nosotros} />
+                    <Route path="/Talleres" component={Talleres} />
+                    <Route path="/Noticias" component={Noticias} />
+                    <Route path="/Anuncios" component={Anuncios} />
+                    <Route path="/Calendario" component={Calendario} />
+                    <Route path="/Galeria" component={Galeria} />
+                    <Route path="/Contacto" component={Contacto} />
                     <Redirect to='/Inicio' />
                 </Switch>
             </div>

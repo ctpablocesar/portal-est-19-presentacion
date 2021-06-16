@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Switch,
     Route
 } from "react-router-dom";
@@ -14,7 +14,6 @@ export const AppRouter = () => {
             <main>
                 <Switch>
                     <Route path="/" component={DashBoardRoutes} />
-                   
                 </Switch>
             </main>
         </Router>
