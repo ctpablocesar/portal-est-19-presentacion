@@ -1,7 +1,7 @@
 import React from 'react';
 import ImageGallery from 'react-image-gallery';
 import { images } from '../../Resources/resources';
-import '../../Styles/traction.css'
+import '../../Styles/portalest19.css'
 import { Header } from '../Ui/Header';
 
 export const Galeria = () => {

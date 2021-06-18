@@ -1,8 +1,12 @@
-import '../../Styles/traction.css';
 import { Link, NavLink } from 'react-router-dom';
 import { images } from '../../Resources/resources';
+import { useState } from 'react';
+
+import '../../Styles/portalest19.css';
 
 export const Navbar = () => {
+
+    const [abierto, setAbierto] = useState(false);
 
     return (
         <nav className="navbar navbar-expand-lg navbar-dark navbar-floating">
@@ -24,8 +28,15 @@ export const Navbar = () => {
                     aria-controls="navbarToggler"
                     aria-expanded="false"
                     aria-label="Toggle navigation"
+                    onClick={() => setAbierto(!abierto)}
                 >
-                    <span className="navbar-toggler-icon"></span>
+                    {
+                        !abierto
+                        ?
+                        <span className="fas fa-bars"></span>
+                        :
+                        <span className="fas fa-times"></span>
+                    }
                 </button>
 
                 <div className="collapse navbar-collapse" id="navbarToggler">

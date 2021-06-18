@@ -45,7 +45,7 @@ export const Contacto = () => {
                             </div>
                             <div className="col-lg-12">
                               <div className="form-group pt-2 ml-3">
-                                <input className="form-control text-dark" type="tel" placeholder="Teléfono" required />
+                                <input id="telrow" className="form-control text-dark" type="number" placeholder="Teléfono" required />
                               </div>
                             </div>
                             <div className="col-lg-12">

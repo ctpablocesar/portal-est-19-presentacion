@@ -1,4 +1,4 @@
-import '../../Styles/traction.css';
+import '../../Styles/portalest19.css';
 import { NavLink } from 'react-router-dom';
 import { images } from '../../Resources/resources';
 

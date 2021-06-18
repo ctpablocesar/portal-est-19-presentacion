@@ -2180,6 +2180,10 @@ hr {
   z-index: 99;
 }
 
+.navbar-toggler {
+  background-color: rgb(176, 206, 176);
+} 
+
 .navbar-nav .nav-link {
   font-weight: 500;
 }
@@ -2199,7 +2203,7 @@ hr {
   border-radius: 10%;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .navbar-expand-lg.navbar-floating {
     top: 20px;
   }
@@ -2219,6 +2223,7 @@ hr {
   }
 
 }
+
 
 /*Modal de pago*/
 .pagarmodal{
@@ -2265,6 +2270,8 @@ hr {
  margin-left: auto;
  margin-right: auto;
 }
+
+
 
 /*TALLERES SECTION CARDS*/
 
@@ -2610,7 +2617,7 @@ h2 .texto-fondoclaro{
 
 /*ICONOS*/
 
-.fa-file-signature,.fa-handshake, .fa-hands {
+.fa-file-signature,.fa-handshake, .fa-hands{
   font-size: 4rem;
   color: #5a9759;
 }
@@ -2624,12 +2631,19 @@ h2 .texto-fondoclaro{
 
 .fa-thumbs-up, .fa-chart-line{
   color: #5a9759;
-  font-size: 2rem;
+  font-size: 2rem;;
 }
+
+.fa-times, .fa-bars{
+  font-size:2rem;
+  color: darkgreen;
+}
+
 
 .footer-bg{
   color:#062345;
 }
+
 
 /* .fa-lightbulb{
   font-size: 5rem;
@@ -2764,6 +2778,22 @@ h2 .texto-fondoclaro{
   box-shadow:  8px 8px 8px 8px rgba(123, 206, 120, 0.3); 
  
 }
+
+/*CHROME*/
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+/*Firefox:*/
+input[type="number"] {
+-moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+-moz-appearance: number-input;
+}
+
 
 .contact4 h1, .contact4 h2, .contact4 h3, .contact4 h4, .contact4 h5, .contact4 h6 {
   color: #3e4555;
