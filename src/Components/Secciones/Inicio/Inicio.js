@@ -1,12 +1,26 @@
-import React from 'react'
-import {images} from '../../Resources/resources';
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux';
+import { startLoadingFrase } from '../../../actions/frase';
+import { images } from '../../../Resources/resources';
+import { Frase } from './Frase';
 
 export const Inicio = () => {
+
+    const dispatch = useDispatch()
+
+    const { saving } = useSelector(state => state.ui)
+
+    const { frase } = useSelector(state => state.frase)
+
+    useEffect(() => {
+        dispatch(startLoadingFrase())
+    }, [saving]);
+
     return (
         <div className="Inicio">
             <div
                 className="page-hero-section bg-image hero-home-2"
-                style={{backgroundImage: `url(${images.patio})`}} 
+                style={{ backgroundImage: `url(${images.patio})` }}
             >
                 <div className="hero-caption">
                     <div className="container fg-white h-100">
@@ -34,7 +48,7 @@ export const Inicio = () => {
                                         </div>
                                         <h5 className="fg-gray">Responsabilidad</h5>
                                         <p className="fs-small">
-                                        Responder por los actos generados en la toma de decisiones, previniendo los efectos del propio comportamiento a partir de una decisión propia.                                        </p>
+                                            Responder por los actos generados en la toma de decisiones, previniendo los efectos del propio comportamiento a partir de una decisión propia.                                        </p>
                                     </div>
                                 </div>
                                 <div className="col-md-6 col-lg-4 py-3 wow fadeInUp">
@@ -44,8 +58,8 @@ export const Inicio = () => {
                                         </div>
                                         <h5 className="fg-gray">Honestidad</h5>
                                         <p className="fs-small">
-                                        Establecer la congruencia a partir del sentir, pensar, decir y actuar de los servidores públicos en concordancia con los objetivos de la educación.
-                                    </p>
+                                            Establecer la congruencia a partir del sentir, pensar, decir y actuar de los servidores públicos en concordancia con los objetivos de la educación.
+                                        </p>
                                     </div>
                                 </div>
                                 <div className="col-md-6 col-lg-4 py-3 wow fadeInRight">
@@ -55,7 +69,7 @@ export const Inicio = () => {
                                         </div>
                                         <h5 className="fg-gray">Compromiso</h5>
                                         <p className="fs-small">
-                                        Obligarse a sí mismo, a partir del propio código moral y ético, a cumplir con las políticas, misión, visión y objetivos de la institución.
+                                            Obligarse a sí mismo, a partir del propio código moral y ético, a cumplir con las políticas, misión, visión y objetivos de la institución.
                                         </p>
                                     </div>
                                 </div>
@@ -65,25 +79,7 @@ export const Inicio = () => {
                 </div>
             </div>
 
-            <div className="fondo-modif page-section no-scroll">
-                <div className="container">
-                    <div className="row align-items-center">
-                        <div className="col-lg-7 wow fadeIn">
-                            <div className="size-img">
-                                <img src={images.diaPadre} alt="" />
-                            </div>
-                        </div>
-                        <div className="col-lg-5 pl-lg-5 wow fadeInUp">
-                            <h2 className="mb-4 text-dark">
-                               ¡MES DEL PADRE!
-                            </h2>
-                            <p className="mb-4">
-                            Tener un padre es esencial, pero tener el mejor padre es algo excepcional ¡Felicidades por su día!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <Frase frase={frase} key='1' />
 
 
         </div>

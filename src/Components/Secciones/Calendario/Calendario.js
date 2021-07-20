@@ -1,6 +1,6 @@
 import React from 'react'
-import { images } from '../../Resources/resources';
-import { Header } from '../Ui/Header';
+import { images } from '../../../Resources/resources';
+import { Header } from '../../Ui/Header';
 
 export const Calendario = () => {
     return (

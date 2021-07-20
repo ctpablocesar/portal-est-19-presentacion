@@ -1,8 +1,8 @@
 import React from 'react';
 import ImageGallery from 'react-image-gallery';
-import { images } from '../../Resources/resources';
-import '../../Styles/portalest19.css'
-import { Header } from '../Ui/Header';
+import { images } from '../../../Resources/resources';
+import '../../../Styles/portalest19.css'
+import { Header } from '../../Ui/Header';
 
 export const Galeria = () => {
 
@@ -31,7 +31,7 @@ export const Galeria = () => {
 
     return (
         <div>
-            <Header titulo="Galería"/>
+            <Header titulo="Galería" />
             <div className="galeria">
                 <ImageGallery items={imgs} slideOnThumbnailOver={true} showPlayButton={false} disableThumbnailScroll={true} showFullscreenButton={false} />
             </div>

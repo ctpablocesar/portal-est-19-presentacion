@@ -1,16 +1,18 @@
 import React from 'react';
 import { Redirect, Route, Switch } from 'react-router';
+import ScrollToTop from 'react-scroll-up';
+
 import { Footer } from '../Ui/Footer';
 import { Navbar } from '../Ui/Navbar';
-import { Inicio } from '../Secciones/Inicio';
+
 import { Nosotros } from '../Secciones/Nosotros';
 import { Talleres } from '../Secciones/Talleres';
-import { Noticias } from '../Secciones/Noticias';
-import ScrollToTop from 'react-scroll-up';
-import { Anuncios } from '../Secciones/Anuncios';
-import { Calendario } from '../Secciones/Calendario';
-import { Galeria } from '../Secciones/Galeria';
-import { Contacto } from '../Secciones/Contacto';
+import { Inicio } from '../Secciones/Inicio/Inicio';
+import { Noticias } from '../Secciones/Noticias/Noticias';
+import { Anuncios } from '../Secciones/Anuncios/Anuncios';
+import { Calendario } from '../Secciones/Calendario/Calendario';
+import { Galeria } from '../Secciones/Galeria/Galeria';
+import { Contacto } from '../Secciones/Contacto/Contacto';
 
 export const DashBoardRoutes = () => {
     return (

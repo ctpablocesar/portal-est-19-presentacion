@@ -1,6 +1,6 @@
 import React from 'react'
-import { Header } from '../Ui/Header'
-import { images } from '../../Resources/resources';
+import { Header } from '../../Ui/Header'
+import { images } from '../../../Resources/resources';
 
 export const Noticias = () => {
   return (
@@ -20,7 +20,6 @@ export const Noticias = () => {
                 <p className="card-text text-right"><small className="text-muted">Última actualización hace 3 min</small></p>
               </div>
             </div>
-
           </div>
         </div>
       </div>

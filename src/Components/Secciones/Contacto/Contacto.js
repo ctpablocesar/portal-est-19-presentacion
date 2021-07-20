@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header } from '../Ui/Header';
+import { Header } from '../../Ui/Header';
 
 export const Contacto = () => {
   return (
