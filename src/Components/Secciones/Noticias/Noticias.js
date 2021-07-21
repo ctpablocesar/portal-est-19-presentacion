@@ -1,47 +1,36 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux';
+import { startLoadingNoticias } from '../../../actions/noticias';
 import { Header } from '../../Ui/Header'
-import { images } from '../../../Resources/resources';
+import { Noticia } from './Noticia';
 
 export const Noticias = () => {
+
+  const dispatch = useDispatch()
+
+  const { saving } = useSelector(state => state.ui)
+
+  const { noticias } = useSelector(state => state.noticias)
+
+  useEffect(() => {
+    dispatch(startLoadingNoticias())
+  }, [saving])
+
   return (
     <div>
       <Header titulo="Noticias" />
 
-      <div className="container py-3 col-md-10">
-        <div className="card tarjeta-noticias">
-          <div className="row p-4">
-            <div className="col-md-4">
-              <img src={images.maquinas} className="w-100" alt="imagen de la noticia" />
-            </div>
-            <div className="col-md-8 px-3">
-              <div className="card-block px-3">
-                <h4 className="card-title">Título de la noticia</h4>
-                <p className="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae iure ut corporis accusamus beatae? Perspiciatis blanditiis aliquam repellat ipsum eaque nihil perferendis vitae quas, autem deleniti maiores accusantium eveniet eos? Lorem ipsum dolor sit amet consectetur adipisicing elit. In, minus quae. Quibusdam distinctio mollitia qui, temporibus delectus non atque error reprehenderit, explicabo dolores beatae consequuntur hic ea labore quae reiciendis? lorem </p>
-                <p className="card-text text-right"><small className="text-muted">Última actualización hace 3 min</small></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="container py-3 col-md-10">
-        <div className="card tarjeta-noticias">
-          <div className="row p-4">
-            <div className="col-md-4">
-              <img src={images.maquinas} className="w-100" alt="imagen de la noticia" />
-            </div>
-            <div className="col-md-8 px-3">
-              <div className="card-block px-3">
-                <h4 className="card-title">Título de la noticia</h4>
-                <p className="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae iure ut corporis accusamus beatae? Perspiciatis blanditiis aliquam repellat ipsum eaque nihil perferendis vitae quas, autem deleniti maiores accusantium eveniet eos? Lorem ipsum dolor sit amet consectetur adipisicing elit. In, minus quae. Quibusdam distinctio mollitia qui, temporibus delectus non atque error reprehenderit, explicabo dolores beatae consequuntur hic ea labore quae reiciendis? lorem </p>
-                <p className="card-text text-right"><small className="text-muted">Última actualización hace 3 min</small></p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
+      {
+        !!noticias[0]
+          ?
+          noticias.map((noticia) => (
+            noticia.status
+            &&
+            <Noticia noticia={noticia} key={noticia.id} />
+          ))
+          :
+          <h1 className='sinContenido'>No hay noticias para mostrar</h1>
+      }
 
     </div>
   )

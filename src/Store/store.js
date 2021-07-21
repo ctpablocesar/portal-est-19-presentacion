@@ -1,11 +1,17 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux'
 import thunk from 'redux-thunk'
+import { anunciosReducer } from '../Reducers/anunciosReducer';
 import { fraseReducer } from '../Reducers/fraseReducer';
+import { galeriaReducer } from '../Reducers/galeriaReducer';
+import { noticiasReducer } from '../Reducers/noticiasReducer';
 import { uiReducer } from '../Reducers/uiReducer';
 
 const reducers = combineReducers({
     ui: uiReducer,
-    frase: fraseReducer
+    frase: fraseReducer,
+    noticias: noticiasReducer,
+    anuncios: anunciosReducer,
+    galeria: galeriaReducer,
 });
 
 const composeEnhancers = (typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose;

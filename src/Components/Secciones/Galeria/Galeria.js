@@ -1,33 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useEffect } from 'react';
 import ImageGallery from 'react-image-gallery';
+import { useDispatch, useSelector } from 'react-redux';
+import { startSavingImages } from '../../../actions/galeria';
 import { images } from '../../../Resources/resources';
 import '../../../Styles/portalest19.css'
 import { Header } from '../../Ui/Header';
 
 export const Galeria = () => {
 
-    const imgs = [
-        {
-            original: images.maquinas,
-            thumbnail: images.maquinas,
-        },
-        {
-            original: images.ofimatica,
-            thumbnail: images.ofimatica,
-        },
-        {
-            original: images.patio,
-            thumbnail: images.patio,
-        },
-        {
-            original: images.turismo,
-            thumbnail: images.turismo,
-        },
-        {
-            original: 'https://images.pexels.com/photos/2982449/pexels-photo-2982449.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-            thumbnail: 'https://images.pexels.com/photos/2982449/pexels-photo-2982449.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-        },
-    ];
+    const dispatch = useDispatch()
+
+    const { saving } = useSelector(state => state.ui)
+
+    const { imagenes } = useSelector(state => state.galeria)
+
+    const [imgs, setImgs] = useState([]);
+
+    useEffect(() => {
+        dispatch(startSavingImages())
+        // for (let i = 0; i <= imagenes.length; i++) {
+        //     if (imagenes[i].status) {
+        //         setImgs([
+        //             ...imgs,
+        //             {
+        //                 original: imagenes[i].imagen,
+        //                 thumbnail: imagenes[i].imagen
+        //             }
+        //         ])
+        //     }
+        // }
+    }, [saving])
 
     return (
         <div>
