@@ -4,29 +4,16 @@ import { fetchSinToken } from "../Helpers/fetch"
 import { types } from "../Types/types"
 import { finishLoading, startLoading } from "./ui"
 
-export const startSavingImages = () => {
+export const startSavingCalendario = () => {
     return async (dispatch) => {
 
         dispatch(startLoading())
 
-        const resp = await fetchSinToken('galeria')
+        const resp = await fetchSinToken('cale')
         const body = await resp.json()
 
-        let imagenes = body.galeria.map((data) => (
-            data.status
-            &&
-            {
-                original: data.imagen,
-                thumbnail: data.imagen
-            }
-        ))
-
-        imagenes = imagenes.filter(word => !!word)
-
-        console.log(imagenes)
-
         if (body.ok) {
-            dispatch(saveImages(imagenes))
+            dispatch(saveCalendario(body.calendario[0].imagen))
         } else {
             Swal.fire({
                 icon: 'error',
@@ -41,7 +28,7 @@ export const startSavingImages = () => {
     }
 }
 
-const saveImages = (images) => ({
-    type: types.saveImages,
-    payload: images
+const saveCalendario = (img) => ({
+    type: types.saveCalendario,
+    payload: img
 })

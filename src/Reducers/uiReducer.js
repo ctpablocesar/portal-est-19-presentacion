@@ -19,16 +19,7 @@ export const uiReducer = (state = initialState, action) => {
                 ...state,
                 checking: false
             }
-        case types.startSaveSomething:
-            return {
-                ...state,
-                saving: true
-            }
-        case types.finishSaveSomething:
-            return {
-                ...state,
-                saving: false
-            }
+
         default:
             return state
     }

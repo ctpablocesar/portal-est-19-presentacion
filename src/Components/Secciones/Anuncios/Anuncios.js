@@ -1,6 +1,5 @@
 import React from 'react'
 import { Header } from '../../Ui/Header'
-import { images } from '../../../Resources/resources';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { startLoadingAnuncios } from '../../../actions/anuncios';
@@ -34,7 +33,7 @@ export const Anuncios = () => {
                             <Anuncio anuncio={anuncio} key={anuncio.id} />
                         ))
                         :
-                        <h1 className='sinContenido'>No hay noticias para mostrar</h1>
+                        <h1 className='sinContenido'>No hay anuncios para mostrar</h1>
                 }
 
             </div>
