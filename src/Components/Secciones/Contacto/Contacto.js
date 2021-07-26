@@ -30,20 +30,25 @@ export const Contacto = () => {
               <div className="col-lg-10 my-3 wow fadeInUp">
                 <div className="card-page">
                   <div className="row row-beam-md">
-                    <div className="col-md-4 text-center py-3 py-md-2">
+                    <div className="col-md-3 text-center py-3 py-md-2">
                       <i className="fas fa-map-marker-alt h3"></i>
-                      <p className="contactstyle fw-medium fs-vlarge">Ubicación:</p>
+                      <p className="contactstyle fw-medium fs-vlarge">Ubicación</p>
                       <p className="ubicacion mb-0">Avenida, General Vicente Guerrero s/n, Insurgentes, 34130 Durango, Dgo.</p>
                     </div>
-                    <div className="col-md-4 text-center py-3 py-md-2">
+                    <div className="col-md-3 text-center py-3 py-md-2">
                       <i className="fas fa-phone-alt h3"></i>
                       <p className="contactstyle fw-medium fs-vlarge">Contacto</p>
                       <a id="tels" className="mb-1" href="tel:+526188116727">+52 618-811-67-27</a>
                     </div>
-                    <div className="col-md-4 text-center py-3 py-md-2">
+                    <div className="col-md-3 text-center py-3 py-md-2">
                       <i className="fas fa-envelope-open-text h3"></i>
                       <p className="contactstyle fw-medium fs-vlarge">Correo</p>
                       <a id="email" href="mailto:est19dgomx@gmail.com" className="mb-1">est19dgomx@gmail.com</a>
+                    </div>
+                    <div className="col-md-3 text-center py-3 py-md-2">
+                    <i class="fab fa-youtube h3"></i>
+                      <p className="contactstyle fw-medium fs-vlarge">Youtube</p>
+                      <a id="email" href="https://www.youtube.com/channel/UCMJp7mVLzSGTEAZ3Pi33DMw" className="mb-1">Haz click aquí para ir al canal</a>
                     </div>
                   </div>
                 </div>
