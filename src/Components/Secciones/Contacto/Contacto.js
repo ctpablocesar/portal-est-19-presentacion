@@ -46,9 +46,9 @@ export const Contacto = () => {
                       <a id="email" href="mailto:est19dgomx@gmail.com" className="mb-1">est19dgomx@gmail.com</a>
                     </div>
                     <div className="col-md-3 text-center py-3 py-md-2">
-                    <i class="fab fa-youtube h3"></i>
+                      <i class="fab fa-youtube h3"></i>
                       <p className="contactstyle fw-medium fs-vlarge">Youtube</p>
-                      <a id="email" href="https://www.youtube.com/channel/UCMJp7mVLzSGTEAZ3Pi33DMw" className="mb-1">Haz click aquí para ir al canal</a>
+                      <a id="email" href="https://www.youtube.com/channel/UCMJp7mVLzSGTEAZ3Pi33DMw" target="_blank" className="mb-1">Haz click aquí para ir al canal</a>
                     </div>
                   </div>
                 </div>

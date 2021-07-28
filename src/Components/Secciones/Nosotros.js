@@ -7,7 +7,7 @@ export const Nosotros = () => {
     return (
 
         <div className="App">
-            <Header titulo="Nosotros"/>
+            <Header titulo="Nosotros" />
             <div className="page-section pt-5">
                 <div className="container">
                     <div className="card-page mt-3">
@@ -16,12 +16,12 @@ export const Nosotros = () => {
                         <div className="row justify-content-center">
                             <img src={images.historia} alt="" className="col-md-5" />
                             <p className="text-justify col-md-7">En el año de 1970, Manuel Francisco Peyro Carreño y un grupo de jóvenes entusiastas con gran espíritu en pro de la educación, iniciaron una ardua labor a favor de la adolescencia duranguense, de manera voluntaria y gratuita.
-                            Vieron recompensados sus esfuerzos, cuando formaron una modesta escuela llamada Secundaria de Estudiantes Técnicos (ESET) que ocupó un domicilio particular, ubicado en Felipe Pescador y  Guadalupe en la actual zona centro, iniciando sus labores educativas con 160 alumnos (cuatro grupos).
-                            Poco después (1972), pasaron a ocupar las instalaciones de la Escuela Primaria No. 11 “Lorenzo Rojas”, con el propósito de brindarle a la población egresada de las diferentes primarias de la ciudad, una opción más de seguir preparándose y continuar con sus estudios de educación secundaria; servicio que empezaba a ser muy necesario por su escasez, además de brindarle al alumnado del Instituto Tecnológico de Durango (I.T.D.), una opción y un espacio donde realizar su Servicio social y Prácticas Profesionales para concluir satisfactoriamente sus estudios.
-                            El 29 de junio de 1972 el Ing. Manuel Francisco Peyro Carreño, recibe un oficio de la Dirección General de Educación Tecnológica, donde se le nombra oficialmente: Director de la Escuela Secundaria Tecnológica Industrial y Comercial No. 154 (ETIC No. 154).
-                            Meses más tarde la Escuela Tecnológica Industrial y Comercial No. 154 se traslada a los terrenos ubicados en la calle Vicente Guerrero S/N de la Colonia Insurgentes, y a partir del 23 de octubre de 1972 entra en sus correspondientes funciones educativas.
-                            En septiembre de 1979 la Escuela Tecnológica Industrial y Comercial No. 154, cambia oficialmente su nombre y se convierte en lo que hoy conocemos como:  ESCUELA SECUNDARIA TÉCNICA  19.
-                        </p>
+                                Vieron recompensados sus esfuerzos, cuando formaron una modesta escuela llamada Secundaria de Estudiantes Técnicos (ESET) que ocupó un domicilio particular, ubicado en Felipe Pescador y  Guadalupe en la actual zona centro, iniciando sus labores educativas con 160 alumnos (cuatro grupos).
+                                Poco después (1972), pasaron a ocupar las instalaciones de la Escuela Primaria No. 11 “Lorenzo Rojas”, con el propósito de brindarle a la población egresada de las diferentes primarias de la ciudad, una opción más de seguir preparándose y continuar con sus estudios de educación secundaria; servicio que empezaba a ser muy necesario por su escasez, además de brindarle al alumnado del Instituto Tecnológico de Durango (I.T.D.), una opción y un espacio donde realizar su Servicio social y Prácticas Profesionales para concluir satisfactoriamente sus estudios.
+                                El 29 de junio de 1972 el Ing. Manuel Francisco Peyro Carreño, recibe un oficio de la Dirección General de Educación Tecnológica, donde se le nombra oficialmente: Director de la Escuela Secundaria Tecnológica Industrial y Comercial No. 154 (ETIC No. 154).
+                                Meses más tarde la Escuela Tecnológica Industrial y Comercial No. 154 se traslada a los terrenos ubicados en la calle Vicente Guerrero S/N de la Colonia Insurgentes, y a partir del 23 de octubre de 1972 entra en sus correspondientes funciones educativas.
+                                En septiembre de 1979 la Escuela Tecnológica Industrial y Comercial No. 154, cambia oficialmente su nombre y se convierte en lo que hoy conocemos como:  ESCUELA SECUNDARIA TÉCNICA  19.
+                            </p>
                         </div>
                     </div>
                     <div className="row align-items-start mt-5">
@@ -48,7 +48,9 @@ export const Nosotros = () => {
                         <h5 className="traction">ORGANIGRAMA</h5>
                         <hr />
                         <div className="row justify-content-center">
-                            <img src={images.organigrama} className="img-fluid" alt="" />
+                            <a href={images.organigrama} target="_blank">
+                                <img src={images.organigrama} className="img-fluid" alt="" />
+                            </a>
                         </div>
                     </div>
                     <div className="card-page mt-3">
@@ -56,7 +58,7 @@ export const Nosotros = () => {
                         <hr />
                         <h5 className="text-center text-dark">Nuestra Escuela cuenta con:</h5>
                         <div className="row justify-content-center">
-                           
+
                             <ul className="text-dark">
                                 <li>Veintisiete aulas.</li>
                                 <li>Dos laboratorios de ciencias.</li>
