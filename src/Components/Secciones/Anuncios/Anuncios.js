@@ -7,24 +7,16 @@ import { startLoadingAnuncios } from '../../../actions/anuncios';
 import { Anuncio } from './Anuncio';
 
 export const Anuncios = () => {
-
     const dispatch = useDispatch()
-
     const { saving } = useSelector(state => state.ui)
-
     const { anuncios } = useSelector(state => state.anuncios)
-
     useEffect(() => {
         dispatch(startLoadingAnuncios())
     }, [saving])
-
     return (
         <div>
             <Header titulo="Anuncios" />
-
             <div className=" cards-responsivas w-100 row justify-content-md-center">
-
-
                 {
                     !!anuncios[0]
                         ?
@@ -36,9 +28,20 @@ export const Anuncios = () => {
                         :
                         <h1 className='sinContenido'>No hay anuncios para mostrar</h1>
                 }
-
             </div>
-
         </div>
     )
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

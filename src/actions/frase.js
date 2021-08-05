@@ -4,21 +4,21 @@ import { finishLoading, startLoading } from "./ui"
 
 export const startLoadingFrase = () => {
     return async (dispatch) => {
-
         dispatch(startLoading())
-
         const resp = await fetchSinToken('frase')
         const body = await resp.json()
-
         if (body.ok) {
             const { imagen, titulo, frase } = body.frase[0]
             dispatch(saveFrase(imagen, titulo, frase))
         } else {
-
+            Swal.fire({
+                icon: 'error',
+                title: body.msg,
+                showConfirmButton: false,
+                timer: 1500
+            })
         }
-
         dispatch(finishLoading())
-
     }
 }
 

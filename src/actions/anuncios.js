@@ -6,12 +6,9 @@ import { finishLoading, startLoading } from "./ui"
 
 export const startLoadingAnuncios = () => {
     return async (dispatch) => {
-
         dispatch(startLoading())
-
         const resp = await fetchSinToken('anuncios')
         const body = await resp.json()
-
         if (body.ok) {
             dispatch(saveAnuncios(body.anuncios))
         } else {
@@ -22,9 +19,7 @@ export const startLoadingAnuncios = () => {
                 timer: 1500
             })
         }
-
         dispatch(finishLoading())
-
     }
 }
 

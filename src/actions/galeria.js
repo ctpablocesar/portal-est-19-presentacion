@@ -6,9 +6,7 @@ import { finishLoading, startLoading } from "./ui"
 
 export const startSavingImages = () => {
     return async (dispatch) => {
-
         dispatch(startLoading())
-
         const resp = await fetchSinToken('galeria')
         const body = await resp.json()
 
@@ -20,11 +18,8 @@ export const startSavingImages = () => {
                 thumbnail: data.imagen
             }
         ))
-
+        
         imagenes = imagenes.filter(word => !!word)
-
-        console.log(imagenes)
-
         if (body.ok) {
             dispatch(saveImages(imagenes))
         } else {
@@ -35,9 +30,7 @@ export const startSavingImages = () => {
                 timer: 1500
             })
         }
-
         dispatch(finishLoading())
-
     }
 }
 
